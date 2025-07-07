@@ -60,19 +60,22 @@
 </head>
 <body>
 <header data-bs-theme="dark">   <!-- 至頂項目欄 -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="container-fluid"><a class="navbar-brand" href="#">幽影櫻的MC伺服器[paper]</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span
-                    class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="modpage.html">模組列表</a> </li>
-                </ul>
-            </div>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">幽影櫻的MC伺服器[youer]</a>
 
-                    <!-- 右側下拉選單 -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item"><a class="nav-link active" href="index-youer.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="modpage-neoforge.html">模組列表</a></li>
+        </ul>
+
+        <!-- 右側下拉選單 -->
         <ul class="navbar-nav mb-2 mb-md-0">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle fw-bold bg-warning text-dark rounded px-3 py-2 fs-5" href="#" id="dropdownMenuLink"
@@ -87,11 +90,10 @@
             </ul>
           </li>
         </ul>
-
-        </div>
-    </nav>
+      </div>
+    </div>
+  </nav>
 </header>
-
 
 
 
@@ -110,12 +112,20 @@
 
 <!-- 從這裡開始 -->
 
+
+
+
 <div class="block">
     <div style="font-weight: bold; font-size: 30px; text-align: center;">
         伺服器模組介紹
     </div>
     <div>
         &nbsp;
+    </div>
+
+    <div style="font-weight: bold; font-size: 25px; ">
+        <p><strong>&nbsp;&nbsp;伺服器插件類(plugin)</strong></p>
+
     </div>
 
     <div class="accordion" id="accordionExample">
@@ -146,21 +156,6 @@
         </div>
       </div>
 
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            PerWorldHomes(home)
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            這個插件允許玩家使用指令設定家的位置，並透過指令快速回到家中<br>
-            指令列表:<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;/sethome <家的名稱>  該指令會在玩家所處的位置建立一個家  ex:/sethome home<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;/home <家的名稱>  該指令會讓玩家傳送回家  ex:/home home
-          </div>
-        </div>
-      </div>
 
       <!-- AuthMe -->
     <div class="accordion-item">
@@ -179,24 +174,6 @@
       </div>
     </div>
 
-    <!-- WorldEdit -->
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseWorldEdit" aria-expanded="false" aria-controls="collapseWorldEdit">
-          WorldEdit（世界編輯）
-        </button>
-      </h2>
-      <div id="collapseWorldEdit" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          一個建築插件，允許管理員使用選區與指令快速複製、貼上、填充、清除區域。<br>
-            如需移動大型建築物，可以向管理員申請。
-
-        </div>
-      </div>
-    </div>
-
-
 
     <!-- InventoryRollbackPlus -->
     <div class="accordion-item">
@@ -210,22 +187,6 @@
         <div class="accordion-body">
           在玩家死亡、斷線、進出世界時保存背包，<br>
             若玩家因意外事件導致物品欄產生無法復原的丟失，可以向管理員申請復原
-        </div>
-      </div>
-    </div>
-
-    <!-- Multiverse 系列 -->
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseMultiverse" aria-expanded="false" aria-controls="collapseMultiverse">
-          Multiverse 系列（多世界支援）
-        </button>
-      </h2>
-      <div id="collapseMultiverse" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          該系列包含 multiverse-core、portals、netherportals、inventories，允許伺服器建立多個世界、傳送門、分開背包、管理地獄/終界。<br>
-            是本伺服器可以有複數世界的重要依賴
         </div>
       </div>
     </div>
@@ -259,22 +220,6 @@
             本伺服器中主要用於執行/back /warp指令，<br>
             /back 使玩家回到上次傳送的位置 <br>
             /warp 前往一個公共設施
-        </div>
-      </div>
-    </div>
-
-    <!-- CoreProtect -->
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseCoreProtect" aria-expanded="false" aria-controls="collapseCoreProtect">
-          CoreProtect（紀錄/回溯系統）
-        </button>
-      </h2>
-      <div id="collapseCoreProtect" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          能夠記錄誰挖了什麼方塊、打開了什麼箱子，並還原被破壞的地圖。<br>
-            如果建築物因意外事件造成難以復原的破壞，可以向管理員申請修復
         </div>
       </div>
     </div>
